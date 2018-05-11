@@ -28,22 +28,35 @@ p {
 
 }
 #left{
-  float:left;width : 20%;
-}
-#right{
-  text-align: center;
-  float:right;width : 20%;
-}
-#center{
-  display: inline-block;
-}
-
-.buttonArt{
   color : #abc;
   background: #fff;
   padding: 50px 50px;
   text-decoration: none;
   text-align: center;
   box-shadow: 0px 0px 30px #000;
+
+  float:left;width : 20%;
 }
+#right{
+  color : #abc;
+  background: #fff;
+  padding: 50px 50px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 30px #000;
+
+  text-align: center;
+  float:right;width : 20%;
+}
+#center{
+  color : #abc;
+  background: #fff;
+  padding: 50px 50px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 30px #000;
+
+  display: inline-block;
+}
+
 
