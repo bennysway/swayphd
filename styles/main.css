@@ -20,5 +20,30 @@ p {
   box-shadow: 0px 0px 70px #789;
 }
 
+#container{
+  width:100%;
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+  font-size: 400%;
 
+}
+#left{
+  float:left;width : 20%;
+}
+#right{
+  text-align: center;
+  float:right;width : 20%;
+}
+#center{
+  display: inline-block;
+}
+
+.buttonArt{
+  color : #abc;
+  background: #fff;
+  padding: 50px 50px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 30px #000;
+}
 
