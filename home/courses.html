@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <title>Courses</title>
   <link href="../styles/main.css" rel="stylesheet">
+  <link href="../styles/courses.css" rel="stylesheet">
+  <script src="jquery-3.3.1.js"></script>
 </head>
 <body>
 <h1>Courses</h1>
 
 <p>
   <input id="searchCourse" type="text" placeholder="Course codes or names" >
-  <button onclick="meme()">Search</button>
+  <button onclick="searchCourses()">Search Course</button>
 </p>
-<div>
-
-</div>
-<script type="text/javascript" >
-  function meme() {
-    var s = document.getElementById("searchCourse").value;
-    alert(s)
+<table id="courseTable" width="">
+  <col width="400"/>
+  <col width="500"/>
+  <tr class="tableHeaders">
+    <td >Course ID</td>
+    <td >Course Name</td>
+  </tr>
+</table>
+<script>
+  function searchCourses(){
+    var query = document.getElementById('searchCourse').value;
+    $.get("http://apps.usos.edu.pl/services/progs/search?lang=en&query=" + query,function (data) {
+      console.log(data);
+      AddRows(data["items"]);
+    })
   }
+  function AddRows(arr) {
+    var table = document.getElementById("courseTable");
+
+    var i;
+    for(i = 0; i < arr.length; i++) {
+      var row = table.insertRow(1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = arr[i]["programme"]["id"];
+      cell2.innerHTML = arr[i]["match"];
+    }
+  }
+
 </script>
 </body>
 </html>
