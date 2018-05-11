@@ -7,13 +7,19 @@
 </head>
 <body>
 <h1>Courses</h1>
+
 <p>
-  <input class="myStyle" type="text" placeholder="Course codes or names">
+  <input id="searchCourse" type="text" placeholder="Course codes or names" >
+  <button onclick="meme()">Search</button>
 </p>
 <div>
 
 </div>
-
-
+<script type="text/javascript" >
+  function meme() {
+    var s = document.getElementById("searchCourse").value;
+    alert(s)
+  }
+</script>
 </body>
 </html>
