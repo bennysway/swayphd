@@ -3,8 +3,7 @@
 [![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
 [![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
 
-HTML | CSS | TS
-MONGODB | JSON
+HTML | CSS | TS | MONGODB | JSON
 
 This project task is to be a search engine for university courses in Poland. Click the homepage to view.
 It is still under development but the courses section can list the items searched
