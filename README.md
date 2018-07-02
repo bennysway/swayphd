@@ -9,9 +9,8 @@ MONGODB | JSON
 This project task is to be a search engine for university courses in Poland. Click the homepage to view.
 It is still under development but the courses section can list the items searched
 
-* Homepage: [https://html5boilerplate.com/](https://html5boilerplate.com/)
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Twitter: [@h5bp](https://twitter.com/h5bp)
+* Homepage: [https://html5boilerplate.com/](http://swayphd.gearhostpreview.com)
+* Youtube: [Video](https://youtu.be/1Y4beu4hNQo)
 
 
 ## Backend
